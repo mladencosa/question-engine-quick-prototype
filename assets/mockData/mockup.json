@@ -1,0 +1,311 @@
+{
+  "returncode": 0,
+  "result": {
+    "params": {
+      "person.name.first": {
+        "gposition": 1,
+        "type": "text",
+        "required": true,
+        "placeholder": "Vorname",
+        "validate": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "label": {
+          "validatehint": "Bitte max. 120 Zeichen eingeben"
+        },
+        "questioncategory": "detail",
+        "pos": 1
+      },
+      "person.name.last": {
+        "gposition": 2,
+        "type": "text",
+        "placeholder": "Nachname",
+        "validate": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "label": {
+          "validatehint": "Bitte max. 120 Zeichen eingeben"
+        },
+        "questioncategory": "detail",
+        "pos": 2
+      },
+      "person.gender": {
+        "gposition": 1,
+        "type": "radio",
+        "required": true,
+        "options": [
+          {
+            "pos": 1,
+            "exclusive": "true",
+            "label": "männlich",
+            "value": 1
+          },
+          {
+            "pos": 2,
+            "exclusive": "true",
+            "label": "weiblich",
+            "value": 2
+          }
+        ],
+        "validate": {
+          "type": "integer",
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "showonce": true,
+        "label": {
+          "validatehint": "Bitte wählen Sie eine Antwort aus",
+          "raw": "Sind Sie männlich oder weiblich?"
+        },
+        "questioncategory": "detail",
+        "infotext": "Ihr Geschlecht hat eine große Auswirkung auf alle persönlichen Lebensrisiken, da Frauen und Männer unterschiedliche Krankheits-, Unfall-, Altersarmut-, Arbeitsplatzverlust-, Kriminalitäts- und Todesrisiken haben.",
+        "pos": 3
+      },
+      "person.sport.habit": {
+        "gposition": 1,
+        "type": "radio",
+        "required": true,
+        "options": [
+          {
+            "pos": 1,
+            "exclusive": "true",
+            "label": "ja, gerne und regelmäßig",
+            "value": 1
+          },
+          {
+            "pos": 2,
+            "exclusive": "true",
+            "label": "ja, aber unregelmäßig",
+            "value": 2
+          },
+          {
+            "pos": 3,
+            "exclusive": "true",
+            "label": "nein",
+            "value": 3
+          }
+        ],
+        "validate": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        "label": {
+          "validatehint": "Bitte wählen Sie eine Antwort aus",
+          "raw": "Machen Sie Sport?"
+        },
+        "questioncategory": "detail",
+        "infotext": "Wie viel Sport Sie betreiben, beeinflusst sowohl Ihren Gesundheitszustand als auch Ihr Sportunfallrisiko.",
+        "pos": 4
+      },
+      "person.health.smoke.habit.one": {
+        "gposition": 1,
+        "type": "radio",
+        "required": true,
+        "options": [
+          {
+            "pos": 1,
+            "exclusive": "true",
+            "label": "ja",
+            "value": 1
+          },
+          {
+            "pos": 2,
+            "exclusive": "true",
+            "label": "gelegentlich",
+            "value": 2
+          },
+          {
+            "pos": 3,
+            "exclusive": "true",
+            "label": "nein",
+            "value": 3
+          },
+          {
+            "pos": 4,
+            "exclusive": "true",
+            "label": "will ich nicht sagen",
+            "value": 4
+          }
+        ],
+        "validate": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "label": {
+          "validatehint": "Bitte wählen Sie eine Antwort aus",
+          "raw": "Rauchen Sie?"
+        },
+        "questioncategory": "detail",
+        "infotext": "Wie Sie wissen, hat Rauchen einen negativen Einfluss auf die Gesundheit. Es erhöht das Risiko von Krankheiten und Tod und beeinflusst daher auch diverse Versicherungsprodukte.",
+        "pos": 5
+      },
+      "person.family.partner": {
+        "gposition": 1,
+        "type": "radio",
+        "required": true,
+        "options": [
+          {
+            "pos": 1,
+            "exclusive": "true",
+            "label": "Single/ledig",
+            "value": 1
+          },
+          {
+            "pos": 2,
+            "exclusive": "true",
+            "label": "Verheiratet/eingetragene Partnerschaft",
+            "value": 2
+          },
+          {
+            "pos": 3,
+            "exclusive": "true",
+            "label": "Geschieden",
+            "value": 3
+          },
+          {
+            "pos": 4,
+            "exclusive": "true",
+            "label": "Verwitwet",
+            "value": 4
+          },
+          {
+            "pos": 5,
+            "exclusive": "true",
+            "label": "in Partnerschaft",
+            "value": 5
+          }
+        ],
+        "validate": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "label": {
+          "validatehint": "Bitte wählen Sie eine Antwort aus",
+          "raw": "Wie ist Ihre Familiensituation?"
+        },
+        "dependencynode": true,
+        "schemanode": true,
+        "questioncategory": "detail",
+        "infotext": "Ihr Familienstand hat vor allem Auswirkungen auf Ihren Anspruch auf staatliche Leistungen, aber auch auf einige Risiken (z.B. Rechtsstreitrisiko).",
+        "pos": 6
+      },
+      "object.animal.type.select": {
+        "gposition": 1,
+        "type": "radio",
+        "required": true,
+        "options": [
+          {
+            "pos": 1,
+            "exclusive": "true",
+            "label": "ja, mind. einen Hund",
+            "value": 1
+          },
+          {
+            "pos": 2,
+            "exclusive": "true",
+            "label": "ja, andere Haustiere",
+            "value": 2
+          },
+          {
+            "pos": 3,
+            "exclusive": "true",
+            "label": "nein, keine Haustiere",
+            "value": 3
+          }
+        ],
+        "validate": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        "label": {
+          "validatehint": "Bitte wählen Sie eine Antwort aus",
+          "raw": "Haben Sie Haustiere?"
+        },
+        "questioncategory": "detail",
+        "infotext": "Für manche Tiere, z.B. Hunde, wird eine Tierhaftpflicht empfohlen (bzw. ist diese für Hunde in einigen Bundesländern sogar verpflichtend), da ihre möglichen angerichteten Schäden zu hohen finanziellen Verlusten führen können.",
+        "pos": 7
+      },
+      "object.home.type": {
+        "gposition": 1,
+        "type": "radio",
+        "required": true,
+        "options": [
+          {
+            "pos": 1,
+            "exclusive": "true",
+            "label": "in einer angemieteten Wohnung",
+            "value": 1
+          },
+          {
+            "pos": 2,
+            "exclusive": "true",
+            "label": "in einem angemieteten Haus",
+            "value": 2
+          },
+          {
+            "pos": 3,
+            "exclusive": "true",
+            "label": "in meiner eigenen Wohnung",
+            "value": 3
+          },
+          {
+            "pos": 4,
+            "exclusive": "true",
+            "label": "in meinem eigenen Haus",
+            "value": 4
+          },
+          {
+            "pos": 5,
+            "exclusive": "true",
+            "label": "bei meinen Eltern oder meinem/r Partner/in",
+            "value": 5
+          }
+        ],
+        "validate": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "showonce": true,
+        "label": {
+          "validatehint": "Bitte wählen Sie eine Antwort aus",
+          "raw": "Wo wohnen Sie?"
+        },
+        "dependencynode": true,
+        "schemanode": true,
+        "questioncategory": "detail",
+        "infotext": "Leben Sie in einem Haus, sind unterschiedliche Risiken und Verluste im Fall von Schäden zu erwarten als in einer Wohnung. Es sind auch andere Versicherungsprodukte relevant.",
+        "pos": 8
+      }
+    },
+    "paramcount": 8
+  }
+}
